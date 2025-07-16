@@ -1,0 +1,15 @@
+name = "nvfortran-dc-bug"
+[build]
+auto-executables = true
+auto-tests = true
+auto-examples = true
+module-naming = false
+[install]
+library = false
+test = false
+[fortran]
+implicit-typing = false
+implicit-external = false
+source-form = "free"
+[dependencies]
+fortime = {git="https://github.com/gha3mi/fortime.git"}

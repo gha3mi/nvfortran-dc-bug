@@ -1,0 +1,9 @@
+@nv-multicore
+options test --target test
+options --compiler nvfortran
+options --flag "-stdpar=multicore -Minfo=acce"
+
+@nv-gpu
+options test --target test
+options --compiler nvfortran
+options --flag "-stdpar=gpu -Minfo=acce"
