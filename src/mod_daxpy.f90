@@ -18,6 +18,11 @@ contains
       integer :: j
 
       chunk = int(2_int64**31 - 1)
+      print '(a)', ""
+      print '(a, i20)', "n           = ", n
+      print '(a, i20)', "chunk       = ", chunk
+      print '(a, i20)', "huge(int32) = ", huge(0_int32)
+      print '(a, i20)', "huge(int64) = ", huge(0_int64)
 
       ! allocate(A(n), source=1.0_dp)
       ! allocate(B(n), source=0.0_dp)
